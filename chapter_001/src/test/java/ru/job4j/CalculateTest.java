@@ -21,9 +21,5 @@ public class CalculateTest {
 		System.setOut(new PrintStream(out));
 		Calculate.main(null);
 		assertThat(out.toString(), is("Hello world!\r\n"));
-	}
-	
-	
-		
-	
+	}	
 }
