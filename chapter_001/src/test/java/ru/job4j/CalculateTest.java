@@ -6,20 +6,20 @@ import java.io.PrintStream;
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 /**
- *Test
+ *Test.
  *@author gkachalov
  *@since 06.01.2016
  *@version $Id$
  */
 public class CalculateTest {
 	/**
-	*Test
-	*/	
+	*Test.
+	*/
 	@Test
-	public void whenExecuteMainThenPrintToConsole () { 
+	public void whenExecuteMainThenPrintToConsole() {
 		ByteArrayOutputStream out = new ByteArrayOutputStream();
 		System.setOut(new PrintStream(out));
 		Calculate.main(null);
 		assertThat(out.toString(), is("Hello world!\r\n"));
-	}	
+	}
 }
