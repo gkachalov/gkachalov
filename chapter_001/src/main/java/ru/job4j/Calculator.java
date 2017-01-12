@@ -18,7 +18,7 @@ package ru.job4j;
 	  *@param second - второе слагаемое
 	  */
 	 public void add(double first, double second) {
-		result = first + second;
+		this.result = first + second;
 	 }
 	 /**
 	  *Метод subtraction - метод вычитания.
@@ -26,7 +26,7 @@ package ru.job4j;
 	  *@param second - вычитатель
 	  */
 	 public void subtraction(double first, double second) {
-		result = first - second;
+		this.result = first - second;
 	 }
 	 /**
 	  *Метод div - метод деления.
@@ -34,7 +34,7 @@ package ru.job4j;
 	  *@param second - делитель
 	  */
 	 public void div(double first, double second) {
-		result = first / second;
+		this.result = first / second;
 	 }
 	 /**
 	  *Метод multiplication - метод умножения.
@@ -42,7 +42,7 @@ package ru.job4j;
 	  *@param second - множитель
 	  */
 	 public void multiplication(double first, double second) {
-		result = first * second;
+		this.result = first * second;
 	 }
 	 /**
 	  *Метод getResult - метод возврата результата.
