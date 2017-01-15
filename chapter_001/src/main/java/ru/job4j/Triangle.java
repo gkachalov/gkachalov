@@ -1,7 +1,7 @@
 package ru.job4j;
 
 /**
- *Class Triangle äëÿ ðàñ÷åòà ïëîùàäè òðåóãîëüíèêà abc.
+ *Class Triangle Ð´Ð»Ñ Ñ€Ð°ÑÑ‡ÐµÑ‚Ð° Ð¿Ð»Ð¾Ñ‰Ð°Ð´Ð¸ Ñ‚Ñ€ÐµÑƒÐ³Ð¾Ð»ÑŒÐ½Ð¸ÐºÐ° abc.
  *
  *@author gkachalov
  *@since 12.01.2016
@@ -9,22 +9,22 @@ package ru.job4j;
  */
  public class Triangle {
 	/**
-	 *Òî÷êà à.
+	 *Ð¢Ð¾Ñ‡ÐºÐ° Ð°.
 	 */
 	 private Point a;
 	/**
-	 *Òî÷êà b.
+	 *Ð¢Ð¾Ñ‡ÐºÐ° b.
 	 */
 	 private Point b;
 	/**
-	 *Òî÷êà c.
+	 *Ð¢Ð¾Ñ‡ÐºÐ° c.
 	 */
 	 private Point c;
 	/**
-	 *Êîíñòðóêòîð äëÿ îïèñàíèÿ òðåóãîëüíèêà abc.
-	 *@param a - òî÷êà a
-	 *@param b - òî÷êà b
-	 *@param c - òî÷êà c
+	 *ÐšÐ¾Ð½ÑÑ‚Ñ€ÑƒÐºÑ‚Ð¾Ñ€ Ð´Ð»Ñ Ð¾Ð¿Ð¸ÑÐ°Ð½Ð¸Ñ Ñ‚Ñ€ÐµÑƒÐ³Ð¾Ð»ÑŒÐ½Ð¸ÐºÐ° abc.
+	 *@param a - Ñ‚Ð¾Ñ‡ÐºÐ° a
+	 *@param b - Ñ‚Ð¾Ñ‡ÐºÐ° b
+	 *@param c - Ñ‚Ð¾Ñ‡ÐºÐ° c
 	 */
 	 public Triangle(Point a, Point b, Point c) {
 		 this.a = a;
@@ -32,8 +32,8 @@ package ru.job4j;
 		 this.c = c;
 	 }
 	/**
-	 *Ìåòîä äëÿ âû÷èñëåíèÿ ïëîùàäè òðåóãîëüíèêà abc.
-	 *@return âîçâðàùàåò 0, åñëè òðåóãîëüíèêà íå ñóùåñòâóåò
+	 *ÐœÐµÑ‚Ð¾Ð´ Ð´Ð»Ñ Ð²Ñ‹Ñ‡Ð¸ÑÐ»ÐµÐ½Ð¸Ñ Ð¿Ð»Ð¾Ñ‰Ð°Ð´Ð¸ Ñ‚Ñ€ÐµÑƒÐ³Ð¾Ð»ÑŒÐ½Ð¸ÐºÐ° abc.
+	 *@return Ð²Ð¾Ð·Ð²Ñ€Ð°Ñ‰Ð°ÐµÑ‚ 0, ÐµÑÐ»Ð¸ Ñ‚Ñ€ÐµÑƒÐ³Ð¾Ð»ÑŒÐ½Ð¸ÐºÐ° Ð½Ðµ ÑÑƒÑ‰ÐµÑÑ‚Ð²ÑƒÐµÑ‚
 	 */
 	 public double area() {
 		 double sideAB = a.distanceTo(b);
@@ -41,7 +41,7 @@ package ru.job4j;
 		 double sideAC = a.distanceTo(c);
 		 double result;
 		/**
-		 *Ïðîâåðêà íà ñóùåñòâîâàíèå òðåóãîëüíèêà.
+		 *ÐŸÑ€Ð¾Ð²ÐµÑ€ÐºÐ° Ð½Ð° ÑÑƒÑ‰ÐµÑÑ‚Ð²Ð¾Ð²Ð°Ð½Ð¸Ðµ Ñ‚Ñ€ÐµÑƒÐ³Ð¾Ð»ÑŒÐ½Ð¸ÐºÐ°.
 		 */
 		 boolean existTriangle = ((sideAB + sideBC > sideAC) & (sideBC + sideAC > sideAB) & (sideAB + sideAC >= sideBC));
 		 if (existTriangle) {

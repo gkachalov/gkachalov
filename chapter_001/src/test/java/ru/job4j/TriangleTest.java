@@ -29,7 +29,7 @@ import static org.hamcrest.core.Is.is;
 	 */
 	private final double two = 2.0;
 	/**
-	 * Number 0.01.
+	 * Number 0.51.
 	 */
 	private final double error = 0.51;
 	/**
@@ -40,18 +40,29 @@ import static org.hamcrest.core.Is.is;
 		  Point pointA = new Point(one, one);
 		  Point pointB = new Point(one, two);
 		  Point pointC = new Point(two, two);
-		  Triangle triangle = new Triangle(a, b, c);
+		  Triangle triangle = new Triangle(pointA, pointB, pointC);
 		  assertThat(pointA.distanceTo(pointB), closeTo(half, error));
 	 }
 	 /**
-	 *Test calculation area. The triangle does not exist.
+	 *Test calculation area. The triangle does not exist (pointB = pointC).
 	 */
 	 @Test
-	 public void testTriangleDoesNotExist() {
+	 public void testTriangleDoesNotExistPointBEqualsPoinC() {
 		  Point pointA = new Point(one, one);
 		  Point pointB = new Point(one, two);
 		  Point pointC = new Point(one, two);
-		  Triangle triangle = new Triangle(a, b, c);
+		  Triangle triangle = new Triangle(pointA, pointB, pointC);
+		  assertThat(triangle.area(), is(zero));
+	 }
+	 /**
+	 *Test calculation area. The triangle does not exist (pointB = pointC).
+	 */
+	 @Test
+	 public void testTriangleDoesNotExistPointAEqualsPointB() {
+		  Point pointA = new Point(one, one);
+		  Point pointB = new Point(one, one);
+		  Point pointC = new Point(one, two);
+		  Triangle triangle = new Triangle(pointA, pointB, pointC);
 		  assertThat(triangle.area(), is(zero));
 	 }
  }
