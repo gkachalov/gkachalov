@@ -19,8 +19,6 @@ package ru.job4j;
 		 for (int index = start; index <= finish; index++) {
 			 if (index % 2 == 0) {
 				 sum += index;
-			 } else {
-				 sum += 0;
 			 }
 		 }
 		 return sum;
