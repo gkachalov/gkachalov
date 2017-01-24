@@ -12,32 +12,13 @@ import static org.junit.Assert.assertThat;
  */
  public class FactorialTest {
 	/**
-	 * Number -6.
-	 */
-	private final int minusSix = -6;
-	/**
-	 * Number 0.
-	 */
-	private final int zero = 0;
-	/**
-	 * Number 1.
-	 */
-	private final int one = 1;
-	/**
-	 * Number 3.
-	 */
-	private final int three = 3;
-	/**
-	 * Number 6.
-	 */
-	private final int six = 6;
-
-	/**
 	 *Test method factorial. Вычисление факториала числа 6.
 	 */
 	 @Test
 	 public void testFactorialTen() {
 		  Factorial fact = new Factorial();
+		  final int three = 3;
+		  final int six = 6;
 		  assertThat(fact.factorial(three), is(six));
 	 }
 	/**
@@ -46,6 +27,8 @@ import static org.junit.Assert.assertThat;
 	 @Test
 	 public void testFactorialMinusSix() {
 		  Factorial fact = new Factorial();
+		  final int zero = 0;
+		  final int minusSix = -6;
 		  assertThat(fact.factorial(minusSix), is(zero));
 	 }
 	/**
@@ -54,6 +37,8 @@ import static org.junit.Assert.assertThat;
 	 @Test
 	 public void testFactorialZero() {
 		  Factorial fact = new Factorial();
+		  final int zero = 0;
+		  final int one = 1;
 		  assertThat(fact.factorial(zero), is(one));
 	 }
 	/**
@@ -62,6 +47,7 @@ import static org.junit.Assert.assertThat;
 	 @Test
 	 public void testFactorialOne() {
 		  Factorial fact = new Factorial();
+		  final int one = 1;
 		  assertThat(fact.factorial(one), is(one));
 	 }
  }

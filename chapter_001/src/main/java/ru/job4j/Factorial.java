@@ -11,7 +11,7 @@ package ru.job4j;
 	/**
 	 *Method factorial для для вычисления факториала числа num.
 	 *@param num - число, из которого вычисляем факториал
-	 *@return return - возвращает факториал числа num
+	 *@return result - возвращает факториал числа num
 	 */
 	 public int factorial(int num) {
 		 int result = 1;
