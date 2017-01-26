@@ -16,7 +16,6 @@ import static org.junit.Assert.assertThat;
 	 */
 	 @Test
 	 public void testTurnThree() {
-		  Turn massive = new Turn();
 		  final int one = 1;
 		  final int two = 2;
 		  final int three = 3;
@@ -30,7 +29,6 @@ import static org.junit.Assert.assertThat;
 	 */
 	 @Test
 	 public void testTurnFour() {
-		  Turn massive = new Turn();
 		  final int[] array = {1, 2, 3, 4};
 		  final int[] expectArray = {4, 3, 2, 1};
 		  Turn turn = new Turn();
